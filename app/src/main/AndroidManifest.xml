@@ -4,21 +4,24 @@
 
     <application
         android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         tools:targetApi="31">
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="Make possible to use enpf with root and developer mode without enabling denylist in magisk" />
+            android:value="Make possible to use ENPF app with root and developer mode" />
         <meta-data
             android:name="xposedminversion"
             android:value="100" />
         <meta-data
-            android:name="xposedmodule.target_apks"
-            android:value="kz.enpf.mobile" />
+            android:name="xposedscope"
+            android:resource="@array/target_app" />
     </application>
 
 </manifest>
