@@ -31,7 +31,7 @@ class Main : IXposedHookLoadPackage {
             }
         )
         // БЖЗК қосымшасындағы бағдарламаушылар тексерісі өшірілді
-        XposedBridge.log("ENPF_ENABLER  dev mode check is off")
+        XposedBridge.log("ENPF_ENABLER dev mode check is off")
 
         findAndHookMethod(
             "com.scottyab.rootbeer.RootBeer",
@@ -44,6 +44,6 @@ class Main : IXposedHookLoadPackage {
             }
         )
         // БЖЗК қосымшасындағы рут тексерісі өшірілді
-        XposedBridge.log("ENPF_ENABLER root check is off ${lpparam.packageName}")
+        XposedBridge.log("ENPF_ENABLER root check is off")
     }
 }
